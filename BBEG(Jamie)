@@ -9,7 +9,6 @@ atk = 10
 dmg = 10
 heroHP = 100
 BGHP = 100
-TurnCount = 0
 
 def heroTurn():
 	if heroAct == "D":
