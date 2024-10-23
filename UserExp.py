@@ -2,7 +2,7 @@
 
 Start
 
-print("Welcome! Press Enter to begin playing.") 
+print("Welcome! Press any key to begin playing.") 
 
 print("Narrator 1: You have awoken to discover that you are in a poorly lit room by yourself with vermin. You have no recollection of what happened before this. As you see mounds of sand around you, you believe you are stranded somewhere random in Egypt. The door infront of you looks like a possible exit if you can find a way to unlock it. Find a means of opening the door.")
 
