@@ -37,13 +37,38 @@ print("Narrator 4: After you finish the Sphinx riddles, the Sphinx moves to the 
 print("Narrator 3: You've just entered a room to find an armory of weapons that are at your disposal. You see a Sword, Axe, and Dagger. Although they appear to be old and rusted, they're still usable in combat. These will be useful for any deadly foes that you encounter along the way.")
 
 
+weapon = [“None”, “Dagger”, “Sword”, “Battle Axe”]
+
+attackup = [0, 1, 2, 3]
+
+Match correctAnswers:
+	case 1:
+		print(“Your weapon is ” + weapon[0] + “ and plus damage up is ” + attackup[0])
+		atk += attackup[0]
+
+	case 2:
+		print(“Your weapon is ” + weapon[1] + “ and plus damage up is ” + attackup[1])
+		atk += attackup[1]
+
+	case 3:
+		print(“Your weapon is ” + weapon[2] + “ and plus damage up is ” + attackup[2])
+		atk += attackup[2]
+
+	case 4:
+		print(“Your weapon is ” + weapon[3] + “ and plus damage up is ” + attackup[3])
+		atk += attackup[3]
+
+Return
+
+
+
 
 
 
 
 
 #Enter the Boss Room
-#Big Bad Evil Guy: 
+#Big Bad Evil Guy Dialog 
 print("Welcome to the final room ", playerName " . You have made it very far, but this will be where you will die")
 
 print("Why does the Egypt god Anubis want to fight me!?")
