@@ -1,6 +1,6 @@
-#beggning of code for FieldOfReeds
+# Beginning of code for FieldOfReeds
 
-#Declare variables
+# Declare variables
 atk = 10
 dmg = 10
 heroHP = 100
@@ -9,7 +9,8 @@ BGHP = 100
 
 key = input("Press any key to enter")
 playerName = input print("Welcome! Press enter a name before playing: ") 
-#Narrator 1
+
+# Narrator 1
 print("You have awoken to discover that you are in a poorly lit room by yourself with vermin. You have no recollection of what happened before this. As you see mounds of sand around you, you believe you are stranded somewhere random in Egypt. The door infront of you looks like a possible exit if you can find a way to unlock it. Find a means of opening the door.")
 
 
@@ -68,8 +69,8 @@ Return
 
 
 
-#Enter the Boss Room
-#Big Bad Evil Guy Dialog 
+# Enter the Boss Room
+# Big Bad Evil Guy Dialogue 
 
 
 import BBEG[]
