@@ -70,20 +70,8 @@ Return
 
 #Enter the Boss Room
 #Big Bad Evil Guy Dialog 
-print("Welcome to the final room ", playerName " . You have made it very far, but this will be where you will die")
-
-print("Why does the Egypt god Anubis want to fight me!?")
-
-print("Shut Up!!!")
 
 
-import BBEG 
+import BBEG[]
 
 
-
-
-
-print("What? How could've I possibly been defeated by a weakling like you? This isn't over, you haven't seen the last of me!")
-
-
-print("Thank you for playing our game! We hope you had as much fun playing it as we did creating the story!")
