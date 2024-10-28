@@ -11,29 +11,43 @@ heroHP = 100
 BGHP = 100
 
 def heroTurn():
-	if heroAct == "D":
-		dmg = 0
-		atk = 0
-	else:
-		if heroAct == "B":
-			dmg = dmg / 2
-			atk = atk / 2
+	retry = True
+	while retry == True
+		if heroAct == "D":
+			dmg = 0
+			atk = 0
+			retry = False
 		else:
-			if heroAct != "A":
-				heroAct = input("Invalid Input. Please Enter 'A' to Attack, 'B' to Block, or 'D' to Dodge:")
-heroTurn()
+			if heroAct == "B":
+				dmg = dmg / 2
+				atk = atk / 2
+				retry = False
+			else:
+				if heroAct == "A":
+					retry = False
+				else:
+					heroAct = input("Invalid Input. Please Enter 'A' to Attack, 'B' to Block, or 'D' to Dodge:")
+					
+	return dmg
+	return atk
+	return heroAct
 
 def BGTurn():
 	if TurnCount < 2:
 		TurnCount += 1
-	if TurnCount >= 4:
+	else:
+		atk = atk / 2
+		dmg = 0
 		TurnCount = 0
-BGTurn()
-
+	return atk
+	return dmg
+	
 def calcHP():
 	heroHP -= dmg
 	BGHP -= atk
-calcHP()
+	return heroHP
+	return BGHP
+
  
 #Monologue
 print("Welcome, mortal. I see that you have bested the Sphinx and found your way to my chamber. I am not your enemy, I am simply here to test your resolve one last time. You may have one chance of returning to the land of the living. Best me in combat and I will free your soul, returning you to the life you left behind. Fail, and your soul is mine. Prepare yourself, mortal!")
