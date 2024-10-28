@@ -1,4 +1,5 @@
 # BBEG()
+
 # Declarations:
 TurnCount = 0
 heroAct = "X"
@@ -57,7 +58,7 @@ while Exit == False:
 			heroAct = input("Choose 'A' to Attack, 'B' to Block, or 'D' to Dodge:" )
 			
 		else:
-			print("You have Failed. Your soul belongs to me! The shadows surround and consume you. Welcome to Oblivion.")
+			print("You have failed. Your soul belongs to me! The shadows surround and consume you. Welcome to Oblivion.")
 			Exit = True
 			
 	else:
