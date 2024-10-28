@@ -1,13 +1,13 @@
 #Beginning dialogue (Subject to change)
-print("I am the sphinx, answer these riddles to determine your reward mortal.”)
+print("I am the Sphinx, answer these riddles to determine your reward mortal!.”)
 
-	#Declarations
+# Declarations
 riddleAnswer1 = Lettuce
 riddleAnswer2 = Rain
 riddleAnswer3 = Darkness 
 userAnswer1 = input("What has a head, but no brain?”)
 userAnswer2 = input("What comes down, but never goes up?”)
-userAnswer3 = input("The more of this there is, the less you see… what is it?”)
+userAnswer3 = input("The more of this there is, the less you see… What is it?”)
 correctAnswers = 0
 
 if userAnswer1 == riddleAnswer1
