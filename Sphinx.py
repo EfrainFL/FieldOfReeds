@@ -1,5 +1,5 @@
 #Beginning dialogue (Subject to change)
-print("I am the Sphinx, answer these riddles to determine your reward mortal!.”)
+print(" I am the Sphinx, answer these riddles to determine your reward mortal!. ”)
 
 # Declarations
 riddleAnswer1 = Lettuce
