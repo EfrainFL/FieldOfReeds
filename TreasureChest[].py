@@ -1,4 +1,4 @@
-#start
+# Start
 
 weapon = [“None”, “Dagger”, “Sword”, “Battle Axe”]
 
@@ -22,4 +22,4 @@ Match correctAnswers :
 		print(“Your weapon is ” + weapon[3] + “ and plus damage up is ” + attackup[3])
 		atk += attackup[3]
 
-#return
+# Return
