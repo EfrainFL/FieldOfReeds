@@ -1,4 +1,4 @@
-# Beginning of code for FieldOfReeds
+#Start of code for FieldOfReeds
 
 # Declare variables
 atk = 10
