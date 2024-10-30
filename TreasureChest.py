@@ -4,19 +4,21 @@ def treasureChest():
 
 	attackup = [0, 1, 2, 3]
 
+	i = 0
+
 	Match correctAnswers :
 	
 		case 1 :
-			print(“Your weapon is ” + weapon[0] + “ and plus damage up is ” + attackup[0])
-			atk += attackup[0]
+			print(“Your weapon is ” + weapon[i] + “ and plus damage up is ” + attackup[i])
+			atk += attackup[i]
 
 		case 2 :
-			print(“Your weapon is ” + weapon[1] + “ and plus damage up is ” + attackup[1])
-			atk += attackup[1]
+			print(“Your weapon is ” + weapon[i+1] + “ and plus damage up is ” + attackup[i+1])
+			atk += attackup[i+1]
 
 		case 3 :
-			print(“Your weapon is ” + weapon[2] + “ and plus damage up is ” + attackup[2])
-			atk += attackup[2]
+			print(“Your weapon is ” + weapon[i+2] + “ and plus damage up is ” + attackup[2])
+			atk += attackup[i+2]
 
 		case 4 :
 			print(“Your weapon is ” + weapon[3] + “ and plus damage up is ” + attackup[3])
