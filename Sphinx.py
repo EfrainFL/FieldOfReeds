@@ -10,7 +10,7 @@ def sphinx():
 	userAnswer1 = input("What has a head, but no brain?”)
 	userAnswer2 = input("What comes down, but never goes up?”)
 	userAnswer3 = input("The more of this there is, the less you see… What is it?”)
-	correctAnswers = 0
+
 
 	if userAnswer1 == riddleAnswer1
 		print("That is correct. Onto the next riddle.”)
