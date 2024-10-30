@@ -29,3 +29,5 @@ def sphinx():
 		correctAnswers += 1
 	else: 
 		print("That is incorrect. You have heard all my riddles, claim your reward.”)
+  	
+   	return correctAnswers
