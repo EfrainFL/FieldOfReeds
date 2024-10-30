@@ -39,7 +39,7 @@ print("Narrator 4: After you finish the Sphinx riddles, the Sphinx moves to the 
 print("Narrator 3: You've just entered a room to find an armory of weapons that are at your disposal. You see a Sword, Axe, and Dagger. Although they appear to be old and rusted, they're still usable in combat. These will be useful for any deadly foes that you encounter along the way.")
 
 
-import TreasureChest[]
+from TreasureChest[] import TreasureChest[]
 
 
 
@@ -51,7 +51,7 @@ import TreasureChest[]
 # Big Bad Evil Guy Dialogue 
 
 
-import BBEG[]
+from BBEG[] import BBEG[]
 
 
 #End of program
