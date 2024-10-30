@@ -5,6 +5,7 @@ atk = 10
 dmg = 10
 heroHP = 100
 BGHP = 100
+correctAnswers = 0
 
 
 key = input("Press any key to enter")
