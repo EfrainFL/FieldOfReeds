@@ -16,12 +16,12 @@ def sphinx():
   	print(" I am the Sphinx, answer these riddles to determine your reward mortal!. ”)
 
 # Declarations
-		riddleAnswer1 = Lettuce
-		riddleAnswer2 = Rain
-		riddleAnswer3 = Darkness 
-		userAnswer1 = input("What has a head, but no brain?”)
-		userAnswer2 = input("What comes down, but never goes up?”)
-		userAnswer3 = input("The more of this there is, the less you see… What is it?”)
+	riddleAnswer1 = Lettuce
+	riddleAnswer2 = Rain
+	riddleAnswer3 = Darkness 
+	userAnswer1 = input("What has a head, but no brain?”)
+	userAnswer2 = input("What comes down, but never goes up?”)
+	userAnswer3 = input("The more of this there is, the less you see… What is it?”)
 
 
 	if userAnswer1 == riddleAnswer1
@@ -39,6 +39,37 @@ def sphinx():
 	if userAnswer3 == riddleAnswer3
 		print("That is correct. You have heard all my riddles, claim your reward.”)
 		correctAnswers += 1
+#TreasureChest method
+
+def treasureChest():
+	weapon = [“None”, “Dagger”, “Sword”, “Battle Axe”]
+
+	attackup = [0, 1, 2, 3]
+
+	i = 0
+
+	Match correctAnswers :
+	
+		case 1 :
+			print(“Your weapon is ” + weapon[i] + “ and plus damage up is ” + attackup[i])
+			atk += attackup[i]
+
+		case 2 :
+			print(“Your weapon is ” + weapon[i+1] + “ and plus damage up is ” + attackup[i+1])
+			atk += attackup[i+1]
+
+		case 3 :
+			print(“Your weapon is ” + weapon[i+2] + “ and plus damage up is ” + attackup[2])
+			atk += attackup[i+2]
+
+		case 4 :
+			print(“Your weapon is ” + weapon[3] + “ and plus damage up is ” + attackup[3])
+			atk += attackup[3]
+
+
+
+
+
 
 
 
