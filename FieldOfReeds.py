@@ -7,6 +7,16 @@ heroHP = 100
 BGHP = 100
 correctAnswers = 0
 
+#The space where all the methods will be place
+
+#Sphinx mehtod
+
+
+
+
+
+
+
 
 key = input("Press any key to enter")
 playerName = input print("Welcome! Press enter a name before playing: ") 
@@ -40,19 +50,12 @@ print("Narrator 4: After you finish the Sphinx riddles, the Sphinx moves to the 
 print("Narrator 3: You've just entered a room to find an armory of weapons that are at your disposal. You see a Sword, Axe, and Dagger. Although they appear to be old and rusted, they're still usable in combat. These will be useful for any deadly foes that you encounter along the way.")
 
 
-from TreasureChest import TreasureChest
-
-
-
-
 
 
 
 # Enter the Boss Room
 # Big Bad Evil Guy Dialogue 
 
-
-from BBEG import BBEG
 
 
 #End of program
