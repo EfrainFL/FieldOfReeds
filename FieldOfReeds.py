@@ -19,9 +19,9 @@ def sphinx():
 	riddleAnswer1 = "Lettuce"
 	riddleAnswer2 = "Rain"
 	riddleAnswer3 = "Darkness"
-	userAnswer1 = input("What has a head, but no brain?”)
-	userAnswer2 = input("What comes down, but never goes up?”)
-	userAnswer3 = input("The more of this there is, the less you see… What is it?”)
+	userAnswer1 = input("What has a head, but no brain?")
+	userAnswer2 = input("What comes down, but never goes up?")
+	userAnswer3 = input("The more of this there is, the less you see… What is it?")
 
 
 	if userAnswer1 == riddleAnswer1
