@@ -23,38 +23,38 @@ userAnswer1 = input("What has a head, but no brain?")
 userAnswer2 = input("What comes down, but never goes up?")
 userAnswer3 = input("The more of this there is, the less you see… What is it?")
 
-if userAnswer1 == riddleAnswer1
+if userAnswer1 == riddleAnswer1:
 		print("That is correct. Onto the next riddle.")
 		correctAnswers += 1
 else: 
 		print("That is incorrect. Onto the next riddle.")
 
-if userAnswer2 == riddleAnswer2
+if userAnswer2 == riddleAnswer2:
 		print("That is correct. Onto the next riddle.")
 		correctAnswers += 1
 else: 
 		print("That is incorrect. Onto the next riddle.")
 
-if userAnswer3 == riddleAnswer3
+if userAnswer3 == riddleAnswer3:
 		print("That is correct. You have heard all my riddles, claim your reward.")
 		correctAnswers += 1
 
 
 #TreasureChest method
 def treasureChest():
-	weapon = [“None”, “Dagger”, “Sword”, “Battle Axe”]
+	weapon = [None, “Dagger, Sword, Battle Axe]
 
 	attackup = [0, 1, 2, 3]
 
 	i = 0
 
-	Match correctAnswers :
+	while correctAnswers < 4 :
 	
-		case 1 :
+		if correctAnswers == 1 :
 			print(“Your weapon is ” + weapon[i] + “ and plus damage up is ” + attackup[i])
 			atk += attackup[i]
 
-		case 2 :
+		elif correctAnswers == 2 :
 			print(“Your weapon is ” + weapon[i+1] + “ and plus damage up is ” + attackup[i+1])
 			atk += attackup[i+1]
 
