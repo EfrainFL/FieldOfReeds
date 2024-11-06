@@ -78,7 +78,8 @@ def treasureChest():
 			atk += attackup[i+3]
 	else:
 			print("Somthing went wrong")
-
+def main_end():
+	print("thank you for playing.")
 
 	
 def main():
