@@ -1,4 +1,4 @@
-#Start of code for FieldOfReeds
+# Start of code for FieldOfReeds
 
 # Declare variables
 atk = 10
@@ -40,7 +40,7 @@ if userAnswer3 == riddleAnswer3:
 		correctAnswers += 1
 
 
-#TreasureChest method
+# TreasureChest method
 def treasureChest():
 	weapon = [None, “Dagger, Sword, Battle Axe]
 
@@ -88,7 +88,7 @@ def main():
 
 	print("Narrator 4: After you finish the Sphinx riddles, the Sphinx moves to the side. Depending on what you got correct previously, the greater reward you yield.")
 
-	#Enter the treasure chest room
+	# Enter the treasure chest room
 	print("Narrator 3: You've just entered a room to find an armory of weapons that are at your disposal. You see a Sword, Axe, and Dagger. Although they appear to be old and rusted, they're still usable in combat. These will be useful for any deadly foes that you encounter along the way.")
 
 
