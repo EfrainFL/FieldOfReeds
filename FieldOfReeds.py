@@ -52,7 +52,7 @@ def sphinx():
 
 # TreasureChest method
 def treasureChest():
-	weapon = [None, “Dagger, Sword, Battle Axe]
+	weapon = [None, Dagger, Sword, Battle Axe]
 
 	attackup = [0, 1, 2, 3]
 
