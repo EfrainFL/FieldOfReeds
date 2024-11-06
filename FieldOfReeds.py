@@ -12,9 +12,9 @@ correctAnswers = 0
 key = input("Press any key to enter")
 playerName = input print("Welcome! Press enter a name before playing: ") 
 
-print("You have awoken to discover that you are in a poorly lit room by yourself with vermin. You have no recollection of what happened before this. As you see mounds of sand around you, you believe you are stranded somewhere random in Egypt. The door infront of you looks like a possible exit if you can find a way to unlock it. Find a means of opening the door.")
+print("You have awoken to discover that you are in a poorly lit room by yourself with vermin. You have no recollection of what happened before this. As you see mounds of sand around you, you believe you are stranded somewhere random in Egypt. The door infront of you looks ancient. You turn the handle of the door and enter through.") 
 
-
+print("As you enter the room, it appears there is a giant Sphinx infront of you. The room begins to shake and you hear a voice.")
 
 print("I am the Sphinx, answer these riddles to determine your reward mortal!.")
 
