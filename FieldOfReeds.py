@@ -7,6 +7,7 @@ Sword = "Sword"
 Dagger = "Dagger"
 Axe = "Battle Axe"
 Nothing = "None"
+i = 0 
 
 
 def main_intro():
@@ -56,7 +57,10 @@ def treasureChest():
 
 	attackup = [0, 1, 2, 3]
 
-	i = 0
+	print("After you finish the Sphinx riddles, the Sphinx moves to the side. Depending on what you got correct previously, the greater reward you yield.")
+	print("\n")
+	print("You've just entered a room to find an armory of weapons that are at your disposal. You see a Sword, Axe, and Dagger. Although they appear to be old and rusted, they're still usable in combat. These will be useful for any deadly foes that you encounter along the way.")
+	
 	if correctAnswers == 1 :
 			print(“Your weapon is ” + weapon[i] + “ and plus damage up is ” + attackup[i])
 			atk += attackup[i]
@@ -76,11 +80,7 @@ def treasureChest():
 			print("Somthing went wrong")
 
 
-	print("After you finish the Sphinx riddles, the Sphinx moves to the side. Depending on what you got correct previously, the greater reward you yield.")
-
-	# Enter the treasure chest room
-	print("You've just entered a room to find an armory of weapons that are at your disposal. You see a Sword, Axe, and Dagger. Although they appear to be old and rusted, they're still usable in combat. These will be useful for any deadly foes that you encounter along the way.")
-
+	
 def main():
     game_intro()   
     sphinx()       
