@@ -5,7 +5,7 @@ BGHP = 100
 correctAnswers = 0
 Sword = "Sword"
 Dagger = "Dagger"
-Axe = "Battle Axe"
+Axe = "Axe"
 Nothing = "None"
 i = 0 
 
