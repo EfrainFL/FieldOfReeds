@@ -78,15 +78,6 @@ def treasureChest():
 			print("Somthing went wrong")
 
 
-
-
-	# Enter the Sphinx Room
-
-print("Sphinx: Halt! You must solve my riddles in order to proceed.")
-
-
-
-
 print("Narrator 4: After you finish the Sphinx riddles, the Sphinx moves to the side. Depending on what you got correct previously, the greater reward you yield.")
 
 	# Enter the treasure chest room
@@ -97,15 +88,6 @@ print("Narrator 3: You've just entered a room to find an armory of weapons that 
 
 
    	#Enter the boss room
-
-
-
-
-
-
-
-
-
 
 
 
