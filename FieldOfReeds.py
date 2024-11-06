@@ -13,7 +13,7 @@ i = 0
 def main_intro():
 	key = input("Press any key to enter")
 	print("\n")
-	playerName = input print("Welcome! Press enter a name before playing: ") 
+	playerName = input("Welcome! Press enter a name before playing: ") 
 	print("\n")
 	print("You have awoken to discover that you are in a poorly lit room by yourself with vermin. You have no recollection of what happened before this. As you see mounds of sand around you, you believe you are stranded somewhere random in Egypt. The door infront of you looks ancient. You turn the handle of the door and enter through.") 
 	print("\n")
