@@ -25,19 +25,19 @@ def sphinx():
 
 
 	if userAnswer1 == riddleAnswer1
-		print("That is correct. Onto the next riddle.”)
+		print("That is correct. Onto the next riddle.")
 		correctAnswers += 1
 	else: 
-		print("That is incorrect. Onto the next riddle.”)
+		print("That is incorrect. Onto the next riddle.")
 
 	if userAnswer2 == riddleAnswer2
-		print("That is correct. Onto the next riddle.”)
+		print("That is correct. Onto the next riddle.")
 		correctAnswers += 1
 	else: 
-		print("That is incorrect. Onto the next riddle.”)
+		print("That is incorrect. Onto the next riddle.")
 
 	if userAnswer3 == riddleAnswer3
-		print("That is correct. You have heard all my riddles, claim your reward.”)
+		print("That is correct. You have heard all my riddles, claim your reward.")
 		correctAnswers += 1
 
 
