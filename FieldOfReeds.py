@@ -16,9 +16,9 @@ def sphinx():
   	print("I am the Sphinx, answer these riddles to determine your reward mortal!.")
 
 # Declarations
-	riddleAnswer1 = Lettuce
-	riddleAnswer2 = Rain
-	riddleAnswer3 = Darkness 
+	riddleAnswer1 = "Lettuce"
+	riddleAnswer2 = "Rain"
+	riddleAnswer3 = "Darkness"
 	userAnswer1 = input("What has a head, but no brain?”)
 	userAnswer2 = input("What comes down, but never goes up?”)
 	userAnswer3 = input("The more of this there is, the less you see… What is it?”)
