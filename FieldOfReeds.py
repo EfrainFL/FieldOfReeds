@@ -63,8 +63,8 @@ def treasureChest():
 			atk += attackup[i+2]
 
 		elif correctAnswers == 4 :
-			print(“Your weapon is ” + weapon[3] + “ and plus damage up is ” + attackup[3])
-			atk += attackup[3]
+			print(“Your weapon is ” + weapon[i+3] + “ and plus damage up is ” + attackup[i+3])
+			atk += attackup[i+3]
 		else:
 			print("Somthing went wrong")
 
