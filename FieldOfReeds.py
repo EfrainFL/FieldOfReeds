@@ -27,6 +27,7 @@ def main_intro():
 def sphinx():
 	
 # Declarations
+	correctAnswers = 0
 	riddleAnswer1 = "Lettuce"
 	riddleAnswer2 = "Rain"
 	riddleAnswer3 = "Darkness"
@@ -53,7 +54,7 @@ def sphinx():
 
 # TreasureChest method
 def treasureChest():
-	weapon = [None, Dagger, Sword, Battle Axe]
+	weapon = [Nothing, Dagger, Sword, Battle Axe]
 
 	attackup = [0, 1, 2, 3]
 
@@ -86,7 +87,7 @@ def main():
     main_intro()   
     sphinx()
     treasureChest()
-	main_end()
+#	main_end()
 
 if __name__ == '__main__':
     main()
