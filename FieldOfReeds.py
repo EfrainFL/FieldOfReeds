@@ -83,7 +83,7 @@ def main_end():
 
 	
 def main():
-    game_intro()   
+    main_intro()   
     sphinx()
     treasureChest()
 	main_end()
