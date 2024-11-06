@@ -1,11 +1,15 @@
-# Start of code for FieldOfReeds
-
-# Declare variables
+global atk
 atk = 10
 dmg = 10
 heroHP = 100
 BGHP = 100
+global correctAnswer 
 correctAnswers = 0
+global Sword
+global Dagger
+global Axe
+global Nothing
+
 
 #The space where all the methods will be place
 
