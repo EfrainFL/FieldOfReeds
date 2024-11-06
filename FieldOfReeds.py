@@ -84,8 +84,9 @@ def main_end():
 	
 def main():
     game_intro()   
-    sphinx()       
-    treasureChest()  
+    sphinx()
+    treasureChest()
+	main_end()
 
 if __name__ == '__main__':
     main()
