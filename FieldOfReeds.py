@@ -10,42 +10,41 @@ correctAnswers = 0
 #The space where all the methods will be place
 
 key = input("Press any key to enter")
+print("\n")
 playerName = input print("Welcome! Press enter a name before playing: ") 
-
+print("\n")
 print("You have awoken to discover that you are in a poorly lit room by yourself with vermin. You have no recollection of what happened before this. As you see mounds of sand around you, you believe you are stranded somewhere random in Egypt. The door infront of you looks ancient. You turn the handle of the door and enter through.") 
-
+print("\n")
 print("As you enter the room, it appears there is a giant Sphinx infront of you. The room begins to shake and you hear a voice.")
-
+print("\n")
 print("I am the Sphinx, answer these riddles to determine your reward mortal!.")
-
+print("\n")
 
 #Sphinx mehtod
 
 def sphinx():
 	
-
-
 # Declarations
-riddleAnswer1 = "Lettuce"
-riddleAnswer2 = "Rain"
-riddleAnswer3 = "Darkness"
-userAnswer1 = input("What has a head, but no brain?")
-userAnswer2 = input("What comes down, but never goes up?")
-userAnswer3 = input("The more of this there is, the less you see… What is it?")
+	riddleAnswer1 = "Lettuce"
+	riddleAnswer2 = "Rain"
+	riddleAnswer3 = "Darkness"
+	userAnswer1 = input("What has a head, but no brain?")
+	userAnswer2 = input("What comes down, but never goes up?")
+	userAnswer3 = input("The more of this there is, the less you see… What is it?")
 
-if userAnswer1 == riddleAnswer1:
+	if userAnswer1 == riddleAnswer1:
 		print("That is correct. Onto the next riddle.")
 		correctAnswers += 1
-else: 
+	else: 
 		print("That is incorrect. Onto the next riddle.")
 
-if userAnswer2 == riddleAnswer2:
+	if userAnswer2 == riddleAnswer2:
 		print("That is correct. Onto the next riddle.")
 		correctAnswers += 1
-else: 
+	else: 
 		print("That is incorrect. Onto the next riddle.")
 
-if userAnswer3 == riddleAnswer3:
+	if userAnswer3 == riddleAnswer3:
 		print("That is correct. You have heard all my riddles, claim your reward.")
 		correctAnswers += 1
 
