@@ -39,8 +39,9 @@ def sphinx():
 	if userAnswer3 == riddleAnswer3
 		print("That is correct. You have heard all my riddles, claim your reward.”)
 		correctAnswers += 1
-#TreasureChest method
 
+
+#TreasureChest method
 def treasureChest():
 	weapon = [“None”, “Dagger”, “Sword”, “Battle Axe”]
 
