@@ -58,7 +58,7 @@ def treasureChest():
     weapon = [Nothing, Dagger, Sword, Axe]
     attackup = [0, 1, 2, 3]
 
-    print("After you finish the Sphinx's riddles, the Sphinx moves to the side. Depending on your correct answers, the greater reward you yield.")
+    print("After you finish the Sphinx's riddles, the Sphinx moves to the side. Depending on how many correct answer you attained, the greater reward you yield.")
     print("\n")
     print("You've just entered a room to find an armory of weapons at your disposal. You see a Sword, Axe, and Dagger. Although they appear old and rusted, they're still usable in combat. These will be useful for any deadly foes that you encounter along the way.")
     
