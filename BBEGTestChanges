@@ -64,13 +64,44 @@ print("Welcome, mortal. I see that you have bested the Sphinx and found your way
 # User Input
 heroAct = input(" [Fight! Choose A to Attack, B to Block, or D to Dodge.]")
 	
-while Exit == False:						#Repeat Hero Turn, BadGuy Turn, and HP Calculation until either HP reaches 0
+while Exit == False:							#Repeat Hero Turn, BadGuy Turn, and HP Calculation until either HP reaches 0
 
-	if BGHP > 0:						#While BadGuy HP is greater than 0, Exit value remains False
+	if BGHP > 0:										#While BadGuy HP is greater than 0, Exit value remains False
+		
+		retry = True									#Retry if Invalid Input
+		while retry == True:					#Loop to determine Hero Action 
+			if heroAct == "D":					#Dodge:
+				dmg = 0										#Take 0 Damage
+				atk = 0										#Deal 0 Damage
+				retry = False							#Valid Input, Do not retry
+			else:
+				if heroAct == "B":				#Block:
+					dmg = dmg / 2						#Take Half Damage
+					atk = atk / 2						#Deal Half Damage
+					retry = False						#Valid Input, Do not retry
+				else:
+					if heroAct == "A":			#Attack:
+																	#Take and Deal Full Damage
+						retry = False					#Valid Input, Do not retry
+					else:
+						heroAct = input("Invalid Input. Please Enter 'A' to Attack, 'B' to Block, or 'D' to Dodge:")
+																	#If No Valid Input, Return Error Message and Ask Again. Retry remains True
 
-		combat(TurnCount, heroAct, atk, dmg, heroHP, BGHP)   			#Execute the player choice, Begin Combat
+			if TurnCount < 2:					#BadGuy Attacks twice, then Blocks on every 3rd Turn	
+				TurnCount += 1					#Increment the Turn Count variable
+			else:							#When Turn Count reaches 3, BadGuy Blocks
+				atk = atk / 2					#BadGuy takes half damage from Hero's Attack
+				dmg = 0						#BadGuy deals no damage when blocking
+				TurnCount = 0					#Resets the Turn Counter to 0 
+
+			heroHP -= dmg						#Reduce Hero HP by damage done by BGTurn() (dmg)
+			BGHP -= atk						#Reduce BadGuy HP by damage done by heroTurn() (atk)
+	
+								#If Either HP Total reaches 0, Exit = True and the fight is over
+
+		
 				
-								#Display the results of each round of Combat
+																	#Display the results of each round of Combat
 		print(f"You did {atk} damage. You took {dmg} damage. Your remaining HP is {heroHP}.")
 		
 								#End of Round
