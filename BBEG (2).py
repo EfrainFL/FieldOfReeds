@@ -84,7 +84,5 @@ while Exit == False:					#Repeat Hero Turn, BadGuy Turn, and HP Calculation unti
 	else:						#If BadGuy HP drops to 0, player wins and Exit Value becomes True
 		print("You Win! The light swells around you as your soul returns to its earthly vessel. Congratulations!")
 		Exit = True
-	break
-
 
 	
