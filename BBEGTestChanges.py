@@ -19,20 +19,20 @@ while Exit == False:							#Repeat Hero Turn, BadGuy Turn, and HP Calculation un
 
 		while retry == True:					#Loop to determine Hero Action 
 
-			if heroAct == "D":					#Dodge:
-				dmg = 0							#Take 0 Damage
-				atk = 0							#Deal 0 Damage
-				retry = False					#Valid Input, Do not retry
-
+			if heroAct == "A":			#Attack: Take and Deal Full Damage
+				retry = False			#Valid Input, Do not retry
+			
 			else:
-				if heroAct == "B":				#Block:
-					dmg = dmg / 2				#Take Half Damage
-					atk = atk / 2				#Deal Half Damage
-					retry = False				#Valid Input, Do not retry
+				if heroAct == "D":					#Dodge:
+					dmg = 0							#Take 0 Damage
+					atk = 0							#Deal 0 Damage
+					retry = False					#Valid Input, Do not retry
+
 				else:
-					if heroAct == "A":			#Attack:
-												#Take and Deal Full Damage
-						retry = False			#Valid Input, Do not retry
+					if heroAct == "B":				#Block:
+						dmg = dmg / 2				#Take Half Damage
+						atk = atk / 2				#Deal Half Damage
+						retry = False				#Valid Input, Do not retry
 					else:
 						heroAct = input("Invalid Input. Please Enter 'A' to Attack, 'B' to Block, or 'D' to Dodge:")
 												#If No Valid Input, Return Error Message and Ask Again. Retry remains True
