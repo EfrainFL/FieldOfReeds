@@ -12,7 +12,7 @@ heroHP = 100							#Starting HP for Hero is 100 HP
 BGHP = 100							#Starting HP for BadGuy is 100HP
 
 #Hero's Turn
-def heroTurn(dmg, atk, heroAct, TurnCount, heroHP, BGHP):	#Passes the variables dmg, atk, and Hero Action
+def combat(dmg, atk, heroAct, TurnCount, heroHP, BGHP):	#Passes the variables dmg, atk, and Hero Action
 								#                    to the heroTurn() function
 	retry = True						#Retry if Invalid Input
 	while retry == True:					#Loop to determine Hero Action 
@@ -33,7 +33,7 @@ def heroTurn(dmg, atk, heroAct, TurnCount, heroHP, BGHP):	#Passes the variables 
 					heroAct = input("Invalid Input. Please Enter 'A' to Attack, 'B' to Block, or 'D' to Dodge:")
 								#If No Valid Input, Return Error Message and Ask Again. Retry remains True
 	
-	BGTurn(TurnCount, atk, dmg, heroAct, TurnCount, heroHP, BGHP)     	#Bad Guy gets a turn. Blocks every 3rd turn
+	BGTurn(TurnCount, atk, dmg, heroAct, heroHP, BGHP)     	#Bad Guy gets a turn. Blocks every 3rd turn
 					
 	return (dmg, atk, heroAct)				#Return dmg, atk, and Hero Action for future use
 
@@ -68,7 +68,7 @@ while Exit == False:						#Repeat Hero Turn, BadGuy Turn, and HP Calculation unt
 
 	if BGHP > 0:						#While BadGuy HP is greater than 0, Exit value remains False
 
-		heroTurn(heroAct, atk, dmg)   			#Execute the player choice, Begin Combat
+		combat(TurnCount, heroAct, atk, dmg, heroHP, BGHP)   			#Execute the player choice, Begin Combat
 				
 								#Display the results of each round of Combat
 		print(f"You did {atk} damage. You took {dmg} damage. Your remaining HP is {heroHP}.")
