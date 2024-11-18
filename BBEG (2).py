@@ -15,7 +15,7 @@ BGHP = 100						#Starting HP for BadGuy is 100HP
 def heroTurn(dmg, atk, heroAct):			#Passes the variables dmg, atk, and Hero Action
 							#                    to the heroTurn() function
 	retry = True					#Retry if Invalid Input
-	while retry == True				#Loop to determine Hero Action 
+	while retry == True:				#Loop to determine Hero Action 
 		if heroAct == "D":			#Dodge:
 			dmg = 0				#Take 0 Damage
 			atk = 0				#Deal 0 Damage
@@ -84,7 +84,7 @@ while Exit == False:					#Repeat Hero Turn, BadGuy Turn, and HP Calculation unti
 	else:						#If BadGuy HP drops to 0, player wins and Exit Value becomes True
 		print("You Win! The light swells around you as your soul returns to its earthly vessel. Congratulations!")
 		Exit = True
-break
+	break
 
 
 	
