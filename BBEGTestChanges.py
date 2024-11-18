@@ -5,14 +5,6 @@ TurnCount = 0							#Turn Counter for BadGuy Turn
 heroAct = "X"							#Default Value for Hero Action
 Exit = False							#Exit becomes True when Hero or BadGuy HP drops to 0
 
-# Temporary Declarations of Global Variables for Testing Purposes
-atk = 10								#Default Attack without Modifiers is 10 HP
-dmg = 10								#Default Damage from BadGuy is 10 HP
-heroHP = 100							#Starting HP for Hero is 100 HP
-BGHP = 100								#Starting HP for BadGuy is 100HP
-
-
- 
 # Monologue
 print("Welcome, mortal. I see that you have bested the Sphinx and found your way to my chamber. I am not your enemy, I am simply here to test your resolve one last time. You may have one chance of returning to the land of the living. Best me in combat and I will free your soul, returning you to the life you left behind. Fail, and your soul is mine. Prepare yourself, mortal!")
 
