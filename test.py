@@ -49,7 +49,7 @@ while Exit == False:							#Repeat Hero Turn, BadGuy Turn, and HP Calculation un
 			TurnCount += 1						#Increment the Turn Count variable
 
 		else:									#When Turn Count reaches 3, BadGuy Blocks
-			atk = heroATK / 2						#BadGuy takes half damage from Hero's Attack
+			atk = atk / 2						#BadGuy takes half damage from Hero's Attack
 			dmg = 0								#BadGuy deals no damage when blocking
 			TurnCount = 0						#Resets the Turn Counter to 0 
 
