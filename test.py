@@ -38,8 +38,8 @@ while Exit == False:							#Repeat Hero Turn, BadGuy Turn, and HP Calculation un
 					retry = False					#Valid Input, Do not retry
 
 			elif heroAct == "B":				#Block:
-						dmg = BGATK // 2				#Take Half Damage
-						atk = atk // 2				#Deal Half Damage
+						dmg = BGATK / 2				#Take Half Damage
+						atk = atk / 2				#Deal Half Damage
 						retry = False				#Valid Input, Do not retry
 			else:
 						heroAct = input("Invalid Input. Please Enter 'A' to Attack, 'B' to Block, or 'D' to Dodge:")
@@ -49,7 +49,7 @@ while Exit == False:							#Repeat Hero Turn, BadGuy Turn, and HP Calculation un
 			TurnCount += 1						#Increment the Turn Count variable
 
 		else:									#When Turn Count reaches 3, BadGuy Blocks
-			atk = heroATK // 2						#BadGuy takes half damage from Hero's Attack
+			atk = heroATK / 2						#BadGuy takes half damage from Hero's Attack
 			dmg = 0								#BadGuy deals no damage when blocking
 			TurnCount = 0						#Resets the Turn Counter to 0 
 
