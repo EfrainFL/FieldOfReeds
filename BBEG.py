@@ -22,7 +22,7 @@ prRed(f"Welcome, {playerName}. \n\nI see that you have bested the Sphinx and fou
 # User Input
 heroAct = input("\n Fight! [Choose A to Attack, B to Block, or D to Dodge.]: ")
 	
-while Exit == False:					#Repeat Hero Turn, BadGuy Turn, and HP Calculation until either HP reaches 0
+while not Exit:					#Repeat Hero Turn, BadGuy Turn, and HP Calculation until either HP reaches 0
 
 	if BGHP > 0:						#While BadGuy HP is greater than 0, Exit value remains False
 		
