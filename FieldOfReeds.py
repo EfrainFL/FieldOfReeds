@@ -8,6 +8,8 @@ Dagger = "Dagger"
 Axe = "Axe"
 Nothing = "None"
 i = 0
+playerName = ""
+
 
 def main_intro():
     key = input("\n Press any key to enter: ")
