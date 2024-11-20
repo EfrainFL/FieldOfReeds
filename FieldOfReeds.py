@@ -63,16 +63,16 @@ def treasureChest():
     print("You've just entered a room to find an armory of weapons at your disposal. You see a Sword, Axe, and Dagger. Although they appear old and rusted, they're still usable in combat. These will be useful for any deadly foes that you encounter along the way.")
     
     if correctAnswers == 0:
-        print("Your weapon is " + weapon[i] + " and damage up is " + str(attackup[i]))
+        print("Your weapon is " + weapon[i] + " and damage up is up " + str(attackup[i]))
         atk += attackup[i]
     elif correctAnswers == 1:
-        print("Your weapon is " + weapon[i+1] + " and damage up is " + str(attackup[i+1]))
+        print("Your weapon is " + weapon[i+1] + " and damage up is up " + str(attackup[i+1]))
         atk += attackup[i+1]
     elif correctAnswers == 2:
-        print("Your weapon is " + weapon[i+2] + " and damage up is " + str(attackup[i+2]))
+        print("Your weapon is " + weapon[i+2] + " and damage up is up " + str(attackup[i+2]))
         atk += attackup[i+2]
     elif correctAnswers == 3:
-        print("Your weapon is " + weapon[i+3] + " and damage up is " + str(attackup[i+3]))
+        print("Your weapon is " + weapon[i+3] + " and damage up is up " + str(attackup[i+3]))
         atk += attackup[i+3]
     else:
         print("Something went wrong.")
