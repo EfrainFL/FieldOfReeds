@@ -1,5 +1,4 @@
-
-# BBEG()
+# BBEG() ** WORKING **
 #Print colors to identify errors/print statements and for aesthetics during final presentation
 def prRed(skk): print("\033[91m {}\033[00m" .format(skk))			#Print Red
 def prGreen(skk): print("\033[92m {}\033[00m" .format(skk))			#Print Green
@@ -10,8 +9,8 @@ TurnCount = 0							#Turn Counter for BadGuy Turn
 heroAct = "X"							#Default Value for Hero Action
 Exit = False							#Exit becomes True when Hero or BadGuy HP drops to 0
 
-heroHP = 50                            # Starting HP for Hero
-BGHP = 50                             # Starting HP for BadGuy                          
+heroHP = 50                          	# Starting HP for Hero
+BGHP = 50                             	# Starting HP for BadGuy                          
 BGatk = 10  							# BadGuy Attack damage. Can be increased for higher difficulty
 #dmg = 10								# Default damage taken by hero - reassigned to BGatk
 atk = 10								# Hero Attack damage
@@ -22,11 +21,11 @@ prRed("Welcome, mortal. \n\nI see that you have bested the Sphinx and found your
 # User Input
 heroAct = input("\n Fight! [Choose A to Attack, B to Block, or D to Dodge.]: ")
 	
-while Exit == False:							#Repeat Hero Turn, BadGuy Turn, and HP Calculation until either HP reaches 0
+while Exit == False:					#Repeat Hero Turn, BadGuy Turn, and HP Calculation until either HP reaches 0
 
-	if BGHP > 0:								#While BadGuy HP is greater than 0, Exit value remains False
+	if BGHP > 0:						#While BadGuy HP is greater than 0, Exit value remains False
 		
-		retry = True							#Retry if Invalid Input
+		retry = True					#Retry if Invalid Input
 
 		while retry:					#Loop to determine Hero Action 
 
@@ -37,49 +36,49 @@ while Exit == False:							#Repeat Hero Turn, BadGuy Turn, and HP Calculation un
 				retry = False			#Valid Input, Do not retry
 			
 	
-			elif heroAct == "D":					#Dodge:
+			elif heroAct == "D":		#Dodge:
 					prCyan(f"\nYou roll out of the way of the incoming attack!")
-					dmg = 0							#Take 0 Damage
-					atk = 0							#Deal 0 Damage
-					retry = False					#Valid Input, Do not retry
+					dmg = 0				#Take 0 Damage
+					atk = 0				#Deal 0 Damage
+					retry = False		#Valid Input, Do not retry
 
-			elif heroAct == "B":					#Block:
+			elif heroAct == "B":		#Block:
 					prCyan(f"\nYou parry with the back of your weapon before delivering your riposte!")
-					dmg = BGatk / 2				#Take Half Damage
-					atk = atk / 2				#Deal Half Damage
-					retry = False				#Valid Input, Do not retry
+					dmg = BGatk / 2		#Take Half Damage
+					atk = atk / 2		#Deal Half Damage
+					retry = False		#Valid Input, Do not retry
 			else:
 					heroAct = input("Invalid Input. Please Enter 'A' to Attack, 'B' to Block, or 'D' to Dodge:")
-												#If No Valid Input, Return Error Message and Ask Again. Retry remains True
+										#If No Valid Input, Return Error Message and Ask Again. Retry remains True
 
-		if TurnCount < 2:
-			prRed("\nAnubis attacks you with his kopesh!")						#BadGuy Attacks twice, then Blocks on every 3rd Turn	
-			TurnCount += 1						#Increment the Turn Count variable
+		if TurnCount < 2:				#BadGuy Attacks twice, then Blocks on every 3rd Turn
+			prRed("\nAnubis attacks you with his kopesh!")							
+			TurnCount += 1				#Increment the Turn Count variable
 
-		else:									#When Turn Count reaches 3, BadGuy Blocks
+		else:							#When Turn Count reaches 3, BadGuy Blocks
 			prGreen("\nAnubis blocks your attack with his shield!")
-			atk = atk / 2						#BadGuy takes half damage from Hero's Attack
-			dmg = 0								#BadGuy deals no damage when blocking
-			TurnCount = 0						#Resets the Turn Counter to 0 
+			atk = atk / 2				#BadGuy takes half damage from Hero's Attack
+			dmg = 0						#BadGuy deals no damage when blocking
+			TurnCount = 0				#Resets the Turn Counter to 0 
 
 			
-		heroHP -= dmg							#Reduce Hero HP by damage done by BGTurn() (dmg)
+		heroHP -= dmg					#Reduce Hero HP by damage done by BGTurn() (dmg)
 
-		BGHP -= atk								#Reduce BadGuy HP by damage done by heroTurn() (atk)
+		BGHP -= atk						#Reduce BadGuy HP by damage done by heroTurn() (atk)
 	
-												#If Either HP Total reaches 0, Exit = True and the fight is over
+										#If Either HP Total reaches 0, Exit = True and the fight is over
 
 		
 				
-												#Display the results of each round of Combat
+										#Display the results of each round of Combat
 		prCyan(f"\n\nYou did {atk} points of damage to Anubis. You took {dmg} points of damage. Your remaining HP is {heroHP}.\n")
 
 		prRed(f"Anubis has {BGHP} HP left.\n")
-		if BGHP < 2:
+		if BGHP < 5:
 			prRed("The ancient god falls to his knees before you, defeated. Finish Him!\n")
 
-		atk = 10
-		BGatk = 10
+		atk = 10						#Reset Hero Attack to initial value
+		BGatk = 10						#Reset BadGuy Attack to initial value
 		
 												#End of Round
 		
