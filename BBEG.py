@@ -14,6 +14,7 @@ BGHP = 50                             	# Starting HP for BadGuy
 BGatk = 10  							# BadGuy Attack damage. Can be increased for higher difficulty
 #dmg = 10								# Default damage taken by hero - reassigned to BGatk
 atk = 10								# Hero Attack damage
+playerName = "Bob"
 
 # Monologue
 prRed(f"Welcome, {playerName}. \n\nI see that you have bested the Sphinx and found your way to my chamber. \nI am not your enemy, I am simply here to test your resolve one last time. \nYou may have one final chance of returning to the land of the living. Best me in combat and I will free your soul, returning you to the life you left behind. \n\nFail, and your soul is mine. Prepare yourself, human! Your fate is at hand!")
@@ -68,8 +69,6 @@ while Exit == False:					#Repeat Hero Turn, BadGuy Turn, and HP Calculation unti
 	
 										#If Either HP Total reaches 0, Exit = True and the fight is over
 
-		
-				
 										#Display the results of each round of Combat
 		prCyan(f"\n\nYou did {atk} points of damage to Anubis. You took {dmg} points of damage. Your remaining HP is {heroHP}.\n")
 
