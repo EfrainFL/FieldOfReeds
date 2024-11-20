@@ -16,7 +16,7 @@ BGatk = 10  							# BadGuy Attack damage. Can be increased for higher difficult
 atk = 10								# Hero Attack damage
 
 # Monologue
-prRed("Welcome, mortal. \n\nI see that you have bested the Sphinx and found your way to my chamber. \nI am not your enemy, I am simply here to test your resolve one last time. \nYou may have one final chance of returning to the land of the living. Best me in combat and I will free your soul, returning you to the life you left behind. \n\nFail, and your soul is mine. Prepare yourself, human! Your fate is at hand!")
+prRed(f"Welcome, {playerName}. \n\nI see that you have bested the Sphinx and found your way to my chamber. \nI am not your enemy, I am simply here to test your resolve one last time. \nYou may have one final chance of returning to the land of the living. Best me in combat and I will free your soul, returning you to the life you left behind. \n\nFail, and your soul is mine. Prepare yourself, human! Your fate is at hand!")
 
 # User Input
 heroAct = input("\n Fight! [Choose A to Attack, B to Block, or D to Dodge.]: ")
@@ -30,7 +30,7 @@ while Exit == False:					#Repeat Hero Turn, BadGuy Turn, and HP Calculation unti
 		while retry:					#Loop to determine Hero Action 
 
 			if heroAct == "A":			#Attack: Take and Deal Full Damage
-				prCyan(f"\nYou attack with your ______!")
+				prCyan(f"\nYou attack with your {weapon2}!")
 				dmg = BGatk
 				atk = atk			
 				retry = False			#Valid Input, Do not retry
