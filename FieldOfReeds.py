@@ -12,14 +12,14 @@ i = 0
 def main_intro():
     key = input("Press any key to enter: ")
     print("\n")
-    playerName = input("Welcome! Please enter a name before playing: ") 
-    print("\n")
-    print("You have awoken to discover that you are in a poorly lit room by yourself with vermin. You have no recollection of what happened before this. As you see mounds of sand around you, you believe you are stranded somewhere random in Egypt. The door in front of you looks ancient. You turn the handle of the door and enter through.") 
-    print("\n")
-    print("As you enter the room, it appears there is a giant Sphinx in front of you. The room begins to shake, and you hear a voice.")
-    print("\n")
-    print("I am the Sphinx. Answer these riddles to determine your reward, mortal!")
-    print("\n")
+    playerName = input("\n Welcome! Please enter a name before playing: ") 
+
+    print(" \n You have awoken to discover that you are in a poorly lit room by yourself with vermin. You have no recollection of what happened before this. As you see mounds of sand around you, you believe you are stranded somewhere random in Egypt. The door in front of you looks ancient. You turn the handle of the door and enter through.") 
+
+    print("\n As you enter the room, it appears there is a giant Sphinx in front of you. The room begins to shake, and you hear a voice.")
+
+    print("\n I am the Sphinx. Answer these riddles to determine your reward, mortal!")
+
 
 # Sphinx method
 def sphinx():
