@@ -1,2 +1,2 @@
 # FieldOfReeds
-Code for project for Feild of Reeds
+Python code for Final Project: "Field of Reeds: An Egyptian Underworld Adventure."
