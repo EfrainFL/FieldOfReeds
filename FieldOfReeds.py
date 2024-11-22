@@ -20,7 +20,7 @@ def main_intro():
 
     print("\n As you enter the room, it appears there is a giant Sphinx in front of you. The room begins to shake, and you hear a voice.")
 
-    print("\n I am the Sphinx. Answer these riddles to determine your reward, mortal!")
+    print("\n I am the Sphinx. Answer me these riddles three, lest the other side ye see. Proceed to determine your reward, mortal!")
 
 
 # Sphinx method
