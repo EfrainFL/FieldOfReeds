@@ -10,6 +10,12 @@ Nothing = "None"
 i = 0
 playerName = ""
 
+def prRed(skk): print("\033[91m {}\033[00m".format(skk))  # Red
+def prGreen(skk): print("\033[92m {}\033[00m".format(skk))  # Green
+def prYellow(skk): print("\033[93m {}\033[00m".format(skk))  # Yellow
+def prBlue(skk): print("\033[94m {}\033[00m".format(skk))  # Blue
+def prMagenta(skk): print("\033[95m {}\033[00m".format(skk))  # Magenta
+def prCyan(skk): print("\033[96m {}\033[00m".format(skk))  # Cyan
 
 def main_intro():
     key = input("\n Press any key to enter: ")
