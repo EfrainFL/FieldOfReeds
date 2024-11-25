@@ -103,7 +103,7 @@ def sphinx():
 
     if userAnswer1 == riddleAnswer1 or  userAnswer1 == riddleAnswerA:
         correctAnswers += 1
-        prCyan(f"\nThe Sphinx nods solemnly, then smirks.")
+        prCyan("\nThe Sphinx nods solemnly, then smirks.")
         prYellow(f"\n Well done, human. You have answered {correctAnswers} correctly. You are smarter than you look.\n")
         key = input("\nPress Enter to proceed.")
         
@@ -117,7 +117,7 @@ def sphinx():
     
     if userAnswer2 == riddleAnswer2 or userAnswer2 == riddleAnswerB:
         correctAnswers += 1
-        prCyan(f"\nThe Sphinx nods sagely.")
+        prCyan("\nThe Sphinx nods sagely.")
         prYellow(f"\n Well done, {playerName}. You have answered {correctAnswers} correctly. Only one riddle remains.\n")
         key = input("\nPress Enter to proceed.")
     else: 
@@ -134,7 +134,7 @@ def sphinx():
     else: 
         wrongAnswers += 1
         prCyan("\nThe guardian shakes his head.")
-        prYellow("\n I'm sorry, but that is incorrect. You answered {correctAnswers} riddles correctly and got {wrongAnswers} wrong.\n")
+        prYellow(f"\n I'm sorry, but that is incorrect. You answered {correctAnswers} riddles correctly and got {wrongAnswers} wrong.\n")
 
 # TreasureChest method
 def treasureChest():
