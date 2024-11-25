@@ -300,7 +300,8 @@ def combat():
                                             #Display the results of each round of Combat
             prCyan(f"\n\nYou did {atk} points of damage to Anubis. You took {dmg} points of damage. Your remaining HP is {heroHP}.\n")
 
-            prRed(f"Anubis has {BGHP} HP left.\n")
+            #prRed(f"Anubis has {BGHP} HP left.\n") 		# For testing/debugging purposes
+		
             if BGHP < 5:
                 prRed("The ancient god falls to his knees before you, defeated. Finish Him!\n")
              
