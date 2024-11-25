@@ -1,5 +1,3 @@
-#The Final Code - Working 11/25/2024
-
 import os                   #Import OS to use clear screen command
 
 atk = 10
@@ -94,13 +92,16 @@ def sphinx():
     global playerName
     wrongAnswers = 0
     riddleAnswer1 = "Lettuce"
+    riddleAnswerA = "lettuce"
     riddleAnswer2 = "Rain"
+    riddleAnswerB = "rain"
     riddleAnswer3 = "Darkness"
+    riddleAnswerC = "darkness"
     #riddleAnswer3 = "Aces"             #Alternate Riddle Answer
 
     userAnswer1 = input("\n\n I am one of many on the field with no body, nor eyes, nor mouth, or nose. I am a head with no brain. What am I?  ")
 
-    if userAnswer1 == riddleAnswer1:
+    if userAnswer1 == riddleAnswer1 or  userAnswer1 == riddleAnswerA:
         correctAnswers += 1
         prCyan(f"\nThe Sphinx nods solemnly, then smirks.")
         prYellow(f"\n Well done, human. You have answered {correctAnswers} correctly. You are smarter than you look.\n")
@@ -114,19 +115,19 @@ def sphinx():
 
     userAnswer2 = input("\n It is said that that which goes up must come down. But what comes down, yet never goes up? ")
     
-    if userAnswer2 == riddleAnswer2:
+    if userAnswer2 == riddleAnswer2 or userAnswer2 == riddleAnswerB:
         correctAnswers += 1
         prCyan(f"\nThe Sphinx nods sagely.")
         prYellow(f"\n Well done, {playerName}. You have answered {correctAnswers} correctly. Only one riddle remains.\n")
         key = input("\nPress Enter to proceed.")
     else: 
         wrongAnswers += 1
-        prYellow("\n That is incorrect. You have answered {correctAnswers} correctly and have gotten {wrongAnswers} wrong. Only one riddle remains.\n Onto the final riddle.")
+        prYellow(f"\n That is incorrect. You have answered {correctAnswers} correctly and have gotten {wrongAnswers} wrong. Only one riddle remains.\n Onto the final riddle.")
 
     userAnswer3 = input("\n My last riddle is a simple one, yet more difficult than it may appear... The more of this there is, the less you see. What is it? ")
     #userAnswer3 = input("\n We are the youngest children of Four Royal Houses. Even or Odd whether we stand Before the King or After him. What are We?")    #Alternate Riddle
     
-    if userAnswer3 == riddleAnswer3:
+    if userAnswer3 == riddleAnswer3 or userAnswer3 == riddleAnswerC:
         correctAnswers += 1
         prCyan(f"\nThe Sphinx nods enthusiastically.")
         prYellow(f"\n Well done {playerName}. You have heard the last of my riddles. You answered {correctAnswers} riddles correctly and got {wrongAnswers} wrong.\n")
@@ -259,19 +260,19 @@ def combat():
 
             while retry:					#Loop to determine Hero Action 
 
-                if heroAct == "A":			#Attack: Take and Deal Full Damage
+                if heroAct == "A" or  heroAct == "a":			#Attack: Take and Deal Full Damage
                     prCyan(f"\nYou attack with your {weaponName}!")
                     dmg = BGatk
                     atk = atk			
                     retry = False			#Valid Input, Do not retry
 	
-                elif heroAct == "D":		#Dodge:
+                elif heroAct == "D" or heroAct == "d":		#Dodge:
                     prCyan(f"\nYou roll out of the way of the incoming attack!")
                     dmg = 0				#Take 0 Damage
                     atk = 0				#Deal 0 Damage
                     retry = False		#Valid Input, Do not retry
 
-                elif heroAct == "B":		#Block:
+                elif heroAct == "B" or heroAct == "b":		#Block:
                     prCyan(f"\nYou parry the incoming attack before delivering your riposte!")
                     dmg = BGatk / 2		#Take Half Damage
                     atk = atk / 2		#Deal Half Damage
@@ -349,4 +350,3 @@ def main():
 # Call the Main function to run the program
 if __name__ == '__main__':
     main()
-
