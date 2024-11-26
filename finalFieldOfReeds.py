@@ -186,7 +186,7 @@ def treasureChest():
         answerStr = "all"
         atk += attackup[i+3]
         weaponName = weapon[i+3]
-        prCyan("The Sphinx moves one massive paw revealing an ornate chest of gold, set with precious stones and carved with the likeness of a jackal's head.") 
+        prCyan("The Sphinx moves one massive paw revealing an ornate chest of gold, set with precious stones and carved with \nthe likeness of a jackal's head.") 
         prYellow(f"\n Come forward, Mighty {playerName}, and receive your reward for answering {answerStr} of my riddles correctly. Within this chest \nis a weapon that will aid you in your final challenge.")
         key = input("\n Press Enter to Open the Chest")
         os.system('clear')
