@@ -1,7 +1,7 @@
 import os                   #Import OS to use clear screen command
 
 atk = 10
-dmg = 10
+dmg = 20
 heroHP = 100
 BGHP = 100
 correctAnswers = 0
@@ -223,7 +223,8 @@ def combat():
     Exit = False							    # Exit becomes True when Hero or BadGuy HP drops to 0
     atkReset = atk                              # Preserve atk value with modifier included
     BGatk = dmg                                 # Redefine dmg as BGatk
-    
+    BGatkReset = BGatk
+
     prCyan("\n\nYou bid farewell to the Sphinx as you step into the diminuitive vessel. Once you are settled, the coracle drifts away \nfrom the shore of its own accord and carries you into the darkness, hardly making a sound as its hull breaks the still water. \nAfter some time, you begin to see tiny pinpricks of light far above you. \nThe stars twinkle and shine in the darkness, illuminating nothing.\n\n Soon, between the gentle rocking of the tiny boat and the swishing sounds of water against the reed hull, you find yourself \ndrifting in and out of consciousness. You dream briefly of your family members that you have lost.\n For a time, a favored pet walks beside you; a feeling of security envelops you and restful sleep descends upon you.")
     
     key = input("\n...")
@@ -308,7 +309,7 @@ def combat():
                 prRed("The ancient god falls to his knees before you, defeated. Finish Him!\n")
              
             atk = atkReset						#Reset Hero Attack to initial value with modifier
-            BGatk = 10						#Reset BadGuy Attack to initial value
+            BGatk = BGatkReset						#Reset BadGuy Attack to initial value
 		
 												#End of Round
 		
