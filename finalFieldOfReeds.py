@@ -151,8 +151,8 @@ def treasureChest():
     if correctAnswers == 0:
         weaponName = "Bare Fists"
         prCyan("The Sphinx looks down at you with sympathy.")
-        prYellow("\n I am sorry, {playerName} but you did not answer any of my riddles correctly.\nI truly wish I could aid you in the next step of your journey, alas I am bound by higher laws.")
-        prRed("You get {weapon[i]} to help you as you move forward.")
+        prYellow(f"\n I am sorry, {playerName} but you did not answer any of my riddles correctly.\nI truly wish I could aid you in the next step of your journey, alas I am bound by higher laws.")
+        prRed(f"You get {weapon[i]} to help you as you move forward.")
         atk += attackup[i]
         key = input("\nPress Enter to Continue")
         os.system('clear')
