@@ -21,6 +21,7 @@ def prMagenta(skk): print("\033[95m {}\033[00m".format(skk))  # Magenta
 def prCyan(skk): print("\033[96m {}\033[00m".format(skk))  # Cyan
 
 def EyeOfRa():
+	os.system('clear')
     prYellow("                              ..,,,,,,,,,,,,,,,.                                ")
     prYellow("                      ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,.                      ")
     prYellow("              ,,,,,,,,,,,,,,,,,,.                ,,,,,,,,,,,,,,,,,              ")
