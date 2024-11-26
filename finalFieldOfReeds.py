@@ -21,8 +21,8 @@ def prMagenta(skk): print("\033[95m {}\033[00m".format(skk))  # Magenta
 def prCyan(skk): print("\033[96m {}\033[00m".format(skk))  # Cyan
 
 def EyeOfRa():
-	os.system('clear')
-	prYellow("                              ..,,,,,,,,,,,,,,,.                                ")
+    os.system('clear')
+    prYellow("                              ..,,,,,,,,,,,,,,,.                                ")
     prYellow("                      ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,.                      ")
     prYellow("              ,,,,,,,,,,,,,,,,,,.                ,,,,,,,,,,,,,,,,,              ")
     prYellow("  .,,,,,,,,,,,,,,,,,,,,             ,,,,,,,,,              .,,,,,,,,,,,,,,,,,,,,")
@@ -125,7 +125,7 @@ def sphinx():
         wrongAnswers += 1
         prYellow(f"\n That is incorrect. You have answered {correctAnswers} correctly and have gotten {wrongAnswers} wrong. Only one riddle remains.\n Onto the final riddle.")
 
-	prYellow("\n My last riddle is a simple one, yet more difficult than it may appear..." )
+    prYellow("\n My last riddle is a simple one, yet more difficult than it may appear..." )
     userAnswer3 = input("\n The more of this there is, the less you see. What is it? ")
     #userAnswer3 = input("\n We are the youngest children of Four Royal Houses. Even or Odd whether we stand Before the King or After him. What are We?")    #Alternate Riddle
     
