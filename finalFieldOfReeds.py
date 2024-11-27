@@ -254,8 +254,8 @@ def combat():
 
         if BGHP > 0:						#While BadGuy HP is greater than 0, Exit value remains False
             
-            #for i in range[BGHP]:          #Attempt at making a Health Bar for BadGuy
-            #    prRed("♥")                  #Comment out if not working
+            #for i in range(BGHP):          #Attempt at making a Health Bar for BadGuy
+            #    prRed("♥", end="")                  #Comment out if not working
 		
             retry = True					#Retry if Invalid Input
 
