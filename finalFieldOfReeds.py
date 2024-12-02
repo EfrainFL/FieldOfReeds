@@ -243,7 +243,7 @@ def combat():
     
     prYellow("\n Sadly for you, before it can be weighed, it must be... removed.")
     
-    prCyan("\nA dread chill moves down your smile as the old deity smiles savagely.")
+    prCyan("\nA dread chill moves down your spine as the old deity smiles savagely.")
     
     prYellow("\n However... Of late I have grown bored of this monotony, therefore I propose to you a challenge: I will give you one opportunity \nto avoid my judgement. Defeat me in combat and I will guide you to the Field of Reeds myself where you may spend eternity \nin Peace, with all the food and drink you desire. Fail, and your soul will be forfeit. \n\n Prepare yourself, human! Your fate is at hand!")
 
