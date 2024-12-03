@@ -2,7 +2,7 @@ import os                   #Import OS to use clear screen command
 
 atk = 10
 dmg = 15
-heroHP = 100
+heroHP = 110
 BGHP = 100
 correctAnswers = 0
 Sword = "Sword"
